@@ -612,3 +612,23 @@ variable "script_name" {
   type        = string
   default     = "configure-jumpbox-vm.sh"
 }
+
+variable "TENANT_ID" {
+  type        = string
+  description = "Tenant ID of the account"
+}
+
+variable "SUBSCRIPTION_ID" {
+  type        = string
+  description = "Subscription ID of the account"
+}
+
+variable "CLIENT_ID" {
+  type        = string
+  description = "Client ID of terraform's azure active directory user"
+}
+
+variable "CLIENT_SECRET" {
+  type        = string
+  description = "Client secret of terraform's azure account"
+}
